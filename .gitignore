@@ -1,0 +1,14 @@
+
+*.wpr
+*.wpu
+*~
+*.pyc
+*.csv
+*.png
+*.jpeg
+*.tiff
+*.tif
+*.pdf
+*.txt
+*direcoty
+*.pck

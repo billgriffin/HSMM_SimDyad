@@ -1,0 +1,183 @@
+Python-DP-Means-Clustering
+==========================
+
+Comparing DP-means and K-means clustering algorithms
+
+"cluster.py" has implementations of k-means and dp-means clustering algorithms.
+Implementations were intended to be straight-forward, understandable and give
+full output for diagnostics, rather than optimized implmentations.
+
+For more information on the dp-means, see Revisiting k-means: New Algorithms 
+via Bayesian Nonparametrics at http://arxiv.org/abs/1111.0352/
+
+CLUSTERING
+==========
+
+> ./cluster.py -h
+Usage: cluster.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -k CLUSTERS, --kmeans-clusters=CLUSTERS
+                        If present, use kmeans with number of clusters
+                        specified
+  -l LAM, --lamda=LAM   If preset, use dpmeans with lambda parameters
+                        specified
+  -x XVAL, --cross-validate=XVAL
+                        Number of records to hold out for cross validations.
+                        Data will be random-ordered for you.
+  -s, --cross-validate-stop
+                        Stop when cross-validation error rises.
+
+> cat input/c3_s20_f2.csv | ./cluster.py -k2
+Tolerance reached at step 8
+Iterations completed: 8
+Final error: 2.994711
+elapsed time: 6.582022 ms
+
+> cat input/c3_s20_f2.csv | ./cluster.py -k2
+Tolerance reached at step 3
+Iterations completed: 3
+Final error: 2.994711
+elapsed time: 2.923965 ms
+
+> cat input/c3_s20_f2.csv | ./cluster.py -l2
+Tolerance reached at step 4
+Iterations completed: 4
+Final error: 0.520926
+elapsed time: 5.388021 ms
+
+> cat input/c3_s20_f2.csv | ./cluster.py -l5
+Tolerance reached at step 2
+Iterations completed: 2
+Final error: 2.994711
+elapsed time: 2.490044 ms
+
+To plot errors for the last run (dp-means in this case), use "plotResult.r"
+This script reads ./output/results.csv and ./output/error.csv.
+
+> ./plotResult.r 
+Loading required package: methods
+Loading required package: grid
+       V1               V2                 V3                 V4     cluster
+ Min.   :-4.997   Min.   :-4.11117   Min.   :0.000   Iter-0    :65   0:103  
+ 1st Qu.:-3.413   1st Qu.:-3.01148   1st Qu.:0.000   Iter-1    :65   1: 90  
+ Median :-2.562   Median :-2.34123   Median :2.000   Iter-2    :65   2: 59  
+ Mean   :-1.606   Mean   :-1.68030   Mean   :1.918   Iter-3    :65   3: 12  
+ 3rd Qu.: 1.425   3rd Qu.:-0.01388   3rd Qu.:4.000   Iter-4    :65   4:126  
+ Max.   : 2.224   Max.   : 2.00472   Max.   :4.000   Iter-Final:65          
+       V1          V2        
+ Min.   :0   Min.   :0.5209  
+ 1st Qu.:1   1st Qu.:0.5209  
+ Median :2   Median :0.5388  
+ Mean   :2   Mean   :0.6489  
+ 3rd Qu.:3   3rd Qu.:0.5777  
+ Max.   :4   Max.   :1.0860  
+
+See training output images created in ./img/iters.png and ./img/error.png
+
+OPTIMAL DP-MEANS
+================
+Finds the optimal value of lambda only from data.
+
+cat input/c4_s300_f2.csv | ./DPopt.py
+
+...
+Final error: 18.510049
+Final cross-validation error: 18.223702
+Tolerance reached at step 6
+Iterations completed: 6
+Final error: 14.329098
+Final cross-validation error: 14.262425
+lambda: 5.48775
+  with error: 14.26242
+
+Code holds back 20% of data for training optimization.
+
+There are no parameters to set unless you anticipate more than the default max
+number of clusters (set in code).
+
+CREATE TEST DATA
+================
+> ./createTestData.py -h
+Usage: createTestData.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -s SAMPLE, --sample-size=SAMPLE
+                        Sample size per cluster
+  -f FEATURES, --features=FEATURES
+                        Number of features
+  -c CLUSTERS, --clusters=CLUSTERS
+                        Sample size
+  -o OVERLAP, --overlap=OVERLAP
+                        0 - distinct, 1 - scale = sig
+
+> ./createTestData.py -s6 -c1 -f3
+2.80484810546906,-5.107337369680055,1.7687444192348534
+4.045291632153071,-4.955840347993885,1.5936351799326172
+3.503220395140305,-5.008280722637208,1.5695863487866264
+3.2134872837791812,-4.809839458886229,1.3158740999089755
+3.8383496901618197,-4.745260338782687,1.74511375801971
+3.3736868708580805,-5.2559718245077045,1.4113521104252063
+
+CLUSTERING TESTS
+================
+
+Example test run on data set with 3 features, 100 points per cluster, with 4 clusters.
+
+> ./test.py | tee output/test.all.csv | grep -v Inter > output/test.csv
+...
+Tolerance reached at step 1
+Iterations completed: 1
+Final error: 0.091798
+Tolerance reached at step 1
+Iterations completed: 1
+Final error: 0.091798
+Tolerance reached at step 1
+Iterations completed: 1
+Final error: 0.091798
+Tolerance reached at step 1
+Iterations completed: 1
+Final error: 0.091798
+Tolerance reached at step 1
+Iterations completed: 1
+Final error: 0.091798
+Tolerance reached at step 1
+Iterations completed: 1
+Final error: 0.091798
+...
+
+> ./test.py -h
+Usage: test.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -f FILE, --file=FILE  Input file name
+  -i ITER, --iterations=ITER
+                        Iterations to use in searching for min error. Default
+                        20.
+
+
+Plot the test results,
+
+> ./plotTest.r 
+Loading required package: methods
+Loading required package: grid
+        V1           V2                V3               V4         
+ dp-means:12   Min.   : 0.5774   Min.   : 1.046   Min.   :  345.6  
+ k-means :12   1st Qu.: 2.7424   1st Qu.: 2.722   1st Qu.: 1438.7  
+               Median : 4.8094   Median : 3.758   Median : 4243.7  
+               Mean   : 5.1264   Mean   : 7.159   Mean   : 4779.7  
+               3rd Qu.: 6.9462   3rd Qu.: 6.242   3rd Qu.: 5946.4  
+               Max.   :12.0000   Max.   :33.695   Max.   :12496.4  
+      method  
+ dp-means:12  
+ k-means :12  
+
+See ./img/test_errors.png and ./img/test_times.png for comparative error and times
+for k-means and dp-means.
+
+NOTE: lambda is chosen based on relevant scale of the data. In this example, the data set
+was created to fall between -5 and 5, so the range is 10.  The maximum lambda is there 10, 
+while the smallest lambda could be chosen as the smallest expected cluster size.  

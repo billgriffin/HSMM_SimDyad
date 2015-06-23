@@ -1,0 +1,8 @@
+[Dolphin]
+HeaderColumnWidths=628,71,125,137,264
+SortOrder=1
+SortRole=date
+Timestamp=2014,11,7,5,18,48
+Version=3
+ViewMode=1
+VisibleRoles=Details_text,Details_size,Details_date,Details_type,Details_path,CustomizedDetails

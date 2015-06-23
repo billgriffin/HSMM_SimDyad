@@ -1,0 +1,160 @@
+The system is: Linux - 3.5.0-17-generic - x86_64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /usr/bin/gfortran 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CompilerIdFortran/a.out"
+
+Determining if the Fortran compiler works passed with the following output:
+Change Dir: /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3049826609/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3049826609.dir/build.make CMakeFiles/cmTryCompileExec3049826609.dir/build
+make[1]: Entering directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec3049826609.dir/testFortranCompiler.f.o
+/usr/bin/gfortran    -c /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTryCompileExec3049826609.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTryCompileExec3049826609
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3049826609.dir/link.txt --verbose=1
+/usr/bin/gfortran         CMakeFiles/cmTryCompileExec3049826609.dir/testFortranCompiler.f.o  -o cmTryCompileExec3049826609 -rdynamic 
+make[1]: Leaving directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp'
+
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3016755219/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3016755219.dir/build.make CMakeFiles/cmTryCompileExec3016755219.dir/build
+make[1]: Entering directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o
+/usr/bin/gfortran    -c /usr/share/cmake-2.8/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o
+Linking Fortran executable cmTryCompileExec3016755219
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3016755219.dir/link.txt --verbose=1
+/usr/bin/gfortran   -v     CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o  -o cmTryCompileExec3016755219 -rdynamic  
+Driving: /usr/bin/gfortran -v CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o -o cmTryCompileExec3016755219 -rdynamic -l gfortran -l m -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gfortran
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.2-2ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.7.2 (Ubuntu/Linaro 4.7.2-2ubuntu1) 
+Reading specs from /usr/lib/gcc/x86_64-linux-gnu/4.7/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3016755219' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3016755219' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --no-add-needed --as-needed --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3016755219 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp'
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3016755219/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3016755219.dir/build.make CMakeFiles/cmTryCompileExec3016755219.dir/build]
+  ignore line: [make[1]: Entering directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building Fortran object CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/usr/bin/gfortran    -c /usr/share/cmake-2.8/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Linking Fortran executable cmTryCompileExec3016755219]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3016755219.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gfortran   -v     CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o  -o cmTryCompileExec3016755219 -rdynamic  ]
+  ignore line: [Driving: /usr/bin/gfortran -v CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o -o cmTryCompileExec3016755219 -rdynamic -l gfortran -l m -shared-libgcc]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.7/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.2-2ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.7 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-werror --with-arch-32=i686 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.7.2 (Ubuntu/Linaro 4.7.2-2ubuntu1) ]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/4.7/libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3016755219' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.7/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3016755219' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.7/collect2 --sysroot=/ --build-id --no-add-needed --as-needed --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3016755219 /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.7 -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../.. CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3016755219] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..]
+    arg [CMakeFiles/cmTryCompileExec3016755219.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.7]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../../../lib] ==> [/usr/lib]
+  collapse dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse dir [/lib/../lib] ==> [/lib]
+  collapse dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse dir [/usr/lib/gcc/x86_64-linux-gnu/4.7/../../..] ==> [/usr/lib]
+  implicit libs: [gfortran;m;quadmath;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2017514321/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2017514321.dir/build.make CMakeFiles/cmTryCompileExec2017514321.dir/build
+make[1]: Entering directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec2017514321.dir/testFortranCompilerF90.f90.o
+/usr/bin/gfortran    -c /home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTryCompileExec2017514321.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTryCompileExec2017514321
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2017514321.dir/link.txt --verbose=1
+/usr/bin/gfortran         CMakeFiles/cmTryCompileExec2017514321.dir/testFortranCompilerF90.f90.o  -o cmTryCompileExec2017514321 -rdynamic 
+make[1]: Leaving directory `/home/atwag/Dropbox/HSMM_SimDyad_New/pyhsmm/deps/Eigen3/build_dir/language_tests/Fortran/CMakeFiles/CMakeTmp'
+
+

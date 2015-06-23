@@ -1,0 +1,1434 @@
+<?xml version="1.0" ?>
+<resource>
+  <object class="wxDialog" name="HSMMSimDyad">
+    <object class="wxMenuBar" name="SDMenu"/>
+    <object class="wxPanel" name="SDPanel">
+      <object class="wxBoxSizer">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <object class="wxNotebook">
+            <object class="notebookpage">
+              <object class="wxPanel" name="tabHigh">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="loadRawFilesHH">
+                          <label>Load raw data files:</label>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbFilesHH">
+                          <size>-1,504</size>
+                        </object>
+                        <flag>wxTOP|wxEXPAND</flag>
+                        <border>15</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelHH">
+                              <label>HSMM Model</label>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsHH">
+                              <label>Show Results</label>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimHH">
+                              <label>Run Simulations</label>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="runClusteringHH">
+                          <label>Run clustering:</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <option>0</option>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster1HH">
+                          <label>Cluster 1</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1HH">
+                          <size>-1,205</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1HH">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1HH">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1HH">
+                              <label>Plot Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxBOTTOM</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster2HH">
+                          <label>Cluster 2</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1HH">
+                          <size>-1,210</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1HH">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1HH">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1HH">
+                              <label>Plot Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                </object>
+              </object>
+              <label>High Couple</label>
+            </object>
+            <object class="notebookpage">
+              <object class="wxPanel" name="tabMedian">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="loadRawFilesMM">
+                          <label>Load raw data files:</label>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbFilesMM">
+                          <size>-1,504</size>
+                        </object>
+                        <flag>wxTOP|wxEXPAND</flag>
+                        <border>15</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelMM">
+                              <label>HSMM Model</label>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsMM">
+                              <label>Show Results</label>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimMM">
+                              <label>Run Simulations</label>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="runClusteringMM">
+                          <label>Run clustering:</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <option>0</option>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster1MM">
+                          <label>Cluster 1</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1MM">
+                          <size>-1,205</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1MM">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1MM">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1MM">
+                              <label>Plot Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxBOTTOM</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster2MM">
+                          <label>Cluster 2</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1MM">
+                          <size>-1,210</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1MM">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1MM">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1MM">
+                              <label>Plot Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                </object>
+              </object>
+              <label>Median Couple</label>
+            </object>
+            <object class="notebookpage">
+              <object class="wxPanel" name="tabLow">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="loadRawFilesLL">
+                          <label>Load raw data files:</label>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbFilesLL">
+                          <size>-1,504</size>
+                        </object>
+                        <flag>wxTOP|wxEXPAND</flag>
+                        <border>15</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelLL">
+                              <label>HSMM Model</label>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsLL">
+                              <label>Show Results</label>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimLL">
+                              <label>Run Simulations</label>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="runClusteringLL">
+                          <label>Run clustering:</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <option>0</option>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster1LL">
+                          <label>Cluster 1</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1LL">
+                          <size>-1,205</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1LL">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1LL">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1LL">
+                              <label>Plot Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxBOTTOM</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster2LL">
+                          <label>Cluster 2</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1LL">
+                          <size>-1,210</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1LL">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1LL">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1LL">
+                              <label>Plot Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                </object>
+              </object>
+              <label>Low Couple</label>
+            </object>
+          </object>
+          <option>1</option>
+          <flag>wxALL|wxEXPAND</flag>
+        </object>
+      </object>
+    </object>
+    <size>1024,600</size>
+    <title>HSMM SimDyad</title>
+  </object>
+  <object class="wxDialog" name="HSMMConfigure">
+    <object class="wxPanel" name="ConfPanel">
+      <object class="wxBoxSizer">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <object class="wxStaticText" name="txtConfTitle">
+            <label>16 files used for High Couple HSMM model</label>
+          </object>
+          <flag>wxALL</flag>
+          <border>5</border>
+        </object>
+        <object class="sizeritem">
+          <object class="wxNotebook">
+            <object class="notebookpage">
+              <object class="wxPanel" name="HSMMParamPanel">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer">
+                    <size>40,-1</size>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxStaticText">
+                              <size>150,-1</size>
+                              <label>Number of resampling:</label>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxTextCtrl" name="n_sampling">
+                              <size>150,-1</size>
+                            </object>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                          <object class="sizeritem">
+                            <object class="wxBitmapButton">
+                              <size>15,16</size>
+                              <bitmap stock_id="wxART_HELP"/>
+                              <enabled>0</enabled>
+                              <style>wxNO_BORDER</style>
+                            </object>
+                            <flag>wxLEFT</flag>
+                            <border>4</border>
+                          </object>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>5</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxStaticText">
+                              <size>150,-1</size>
+                              <label>Alpha:</label>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxTextCtrl" name="alpha">
+                              <size>150,-1</size>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxBitmapButton">
+                              <size>15,16</size>
+                              <bitmap stock_id="wxART_HELP"/>
+                              <enabled>0</enabled>
+                              <style>wxNO_BORDER</style>
+                            </object>
+                            <flag>wxLEFT</flag>
+                            <border>4</border>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>5</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxStaticText">
+                              <size>150,-1</size>
+                              <label>Gamma:</label>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxTextCtrl" name="gamma">
+                              <size>150,-1</size>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxBitmapButton">
+                              <size>15,16</size>
+                              <bitmap stock_id="wxART_HELP"/>
+                              <enabled>0</enabled>
+                              <style>wxNO_BORDER</style>
+                            </object>
+                            <flag>wxLEFT</flag>
+                            <border>4</border>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>5</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxNotebook">
+                          <object class="notebookpage">
+                            <object class="wxPanel">
+                              <object class="wxBoxSizer">
+                                <orient>wxVERTICAL</orient>
+                                <object class="sizeritem">
+                                  <object class="wxBoxSizer">
+                                    <object class="sizeritem">
+                                      <object class="wxStaticText">
+                                        <size>150,-1</size>
+                                        <label>Mu:</label>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxTextCtrl" name="mu">
+                                        <size>150,-1</size>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxBitmapButton">
+                                        <size>15,16</size>
+                                        <bitmap stock_id="wxART_HELP"/>
+                                        <enabled>0</enabled>
+                                        <style>wxNO_BORDER</style>
+                                      </object>
+                                      <flag>wxLEFT</flag>
+                                      <border>4</border>
+                                    </object>
+                                    <orient>wxHORIZONTAL</orient>
+                                  </object>
+                                </object>
+                                <object class="sizeritem">
+                                  <object class="wxBoxSizer">
+                                    <object class="sizeritem">
+                                      <object class="wxStaticText">
+                                        <size>150,-1</size>
+                                        <label>Lambda:</label>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxTextCtrl" name="lambda">
+                                        <size>150,-1</size>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxBitmapButton">
+                                        <size>15,16</size>
+                                        <bitmap stock_id="wxART_HELP"/>
+                                        <enabled>0</enabled>
+                                        <style>wxNO_BORDER</style>
+                                      </object>
+                                      <flag>wxLEFT</flag>
+                                      <border>4</border>
+                                    </object>
+                                    <orient>wxHORIZONTAL</orient>
+                                  </object>
+                                </object>
+                                <object class="sizeritem">
+                                  <object class="wxBoxSizer">
+                                    <object class="sizeritem">
+                                      <object class="wxStaticText">
+                                        <size>150,-1</size>
+                                        <label>Kappa:</label>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxTextCtrl" name="kappa">
+                                        <size>150,-1</size>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxBitmapButton">
+                                        <size>15,16</size>
+                                        <bitmap stock_id="wxART_HELP"/>
+                                        <enabled>0</enabled>
+                                        <style>wxNO_BORDER</style>
+                                      </object>
+                                      <flag>wxLEFT</flag>
+                                      <border>4</border>
+                                    </object>
+                                    <orient>wxHORIZONTAL</orient>
+                                  </object>
+                                </object>
+                                <object class="sizeritem">
+                                  <object class="wxBoxSizer">
+                                    <object class="sizeritem">
+                                      <object class="wxStaticText">
+                                        <size>150,-1</size>
+                                        <label>Nu:</label>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxTextCtrl" name="nu">
+                                        <size>150,-1</size>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxBitmapButton">
+                                        <size>15,16</size>
+                                        <bitmap stock_id="wxART_HELP"/>
+                                        <enabled>0</enabled>
+                                        <style>wxNO_BORDER</style>
+                                      </object>
+                                      <flag>wxLEFT</flag>
+                                      <border>4</border>
+                                    </object>
+                                    <orient>wxHORIZONTAL</orient>
+                                  </object>
+                                </object>
+                              </object>
+                            </object>
+                            <label>Hyper parameters of observations:</label>
+                          </object>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>5</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxNotebook">
+                          <object class="notebookpage">
+                            <object class="wxPanel">
+                              <object class="wxBoxSizer">
+                                <orient>wxVERTICAL</orient>
+                                <object class="sizeritem">
+                                  <object class="wxBoxSizer">
+                                    <object class="sizeritem">
+                                      <object class="wxStaticText">
+                                        <size>150,-1</size>
+                                        <label>K (shape):</label>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxTextCtrl" name="k">
+                                        <size>150,-1</size>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxBitmapButton">
+                                        <size>15,16</size>
+                                        <bitmap stock_id="wxART_HELP"/>
+                                        <enabled>0</enabled>
+                                        <style>wxNO_BORDER</style>
+                                      </object>
+                                      <flag>wxLEFT</flag>
+                                      <border>4</border>
+                                    </object>
+                                    <orient>wxHORIZONTAL</orient>
+                                  </object>
+                                </object>
+                                <object class="sizeritem">
+                                  <object class="wxBoxSizer">
+                                    <object class="sizeritem">
+                                      <object class="wxStaticText">
+                                        <size>150,-1</size>
+                                        <label>Theta (scale):</label>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxTextCtrl" name="theta">
+                                        <size>150,-1</size>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <object class="wxBitmapButton">
+                                        <size>15,16</size>
+                                        <bitmap stock_id="wxART_HELP"/>
+                                        <enabled>0</enabled>
+                                        <style>wxNO_BORDER</style>
+                                      </object>
+                                      <flag>wxLEFT</flag>
+                                      <border>4</border>
+                                    </object>
+                                    <orient>wxHORIZONTAL</orient>
+                                  </object>
+                                </object>
+                              </object>
+                            </object>
+                            <label>Hyper parameters of durations:</label>
+                          </object>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>5</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxStaticText">
+                              <size>150,-1</size>
+                              <label>Number of states:</label>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxTextCtrl" name="n_states">
+                              <size>150,-1</size>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxBitmapButton">
+                              <size>15,16</size>
+                              <bitmap stock_id="wxART_HELP"/>
+                              <enabled>0</enabled>
+                              <style>wxNO_BORDER</style>
+                            </object>
+                            <flag>wxLEFT</flag>
+                            <border>4</border>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>9</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxStaticText">
+                              <size>150,-1</size>
+                              <label>Number of trunc:</label>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxTextCtrl" name="n_trunc">
+                              <size>150,-1</size>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxBitmapButton">
+                              <size>15,16</size>
+                              <bitmap stock_id="wxART_HELP"/>
+                              <enabled>0</enabled>
+                              <style>wxNO_BORDER</style>
+                            </object>
+                            <flag>wxLEFT</flag>
+                            <border>4</border>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                        <border>9</border>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <label>HSMM parameters</label>
+            </object>
+          </object>
+          <flag>wxALL|wxEXPAND</flag>
+          <border>5</border>
+        </object>
+        <object class="sizeritem">
+          <object class="wxBoxSizer">
+            <object class="sizeritem">
+              <object class="wxButton" name="btnRunHSMM">
+                <label>Run HSMM</label>
+              </object>
+            </object>
+            <orient>wxHORIZONTAL</orient>
+            <object class="sizeritem">
+              <object class="wxButton" name="btnApplyConfToAll">
+                <label>Apply configuration to all models</label>
+              </object>
+            </object>
+            <object class="spacer">
+              <size>10,-1</size>
+            </object>
+            <object class="sizeritem">
+              <object class="wxButton" name="btnExit">
+                <label>Exit</label>
+              </object>
+            </object>
+          </object>
+          <flag>wxALL</flag>
+          <border>10</border>
+        </object>
+      </object>
+    </object>
+    <size>800,600</size>
+    <title>HSMM configuration dialog</title>
+  </object>
+  <object class="wxFrame" name="HSMMSimDyadFrame">
+    <object class="wxPanel" name="SDPanel">
+      <object class="wxBoxSizer">
+        <orient>wxVERTICAL</orient>
+        <object class="sizeritem">
+          <object class="wxNotebook">
+            <object class="notebookpage">
+              <object class="wxPanel" name="tabHigh">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="loadRawFilesHH">
+                          <label>Load raw data files:</label>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbFilesHH">
+                          <size>-1,504</size>
+                        </object>
+                        <flag>wxTOP|wxEXPAND</flag>
+                        <border>15</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelHH">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotHH">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsHH">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimHH">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="runClusteringHH">
+                          <label>Run clustering:</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <option>0</option>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster1HH">
+                          <label>Cluster 1</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1HH">
+                          <size>-1,205</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1HH">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotCluster1HH">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1HH">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1HH">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxBOTTOM</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster2HH">
+                          <label>Cluster 2</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster2HH">
+                          <size>-1,210</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster2HH">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotCluster2HH">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster2HH">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster2HH">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                </object>
+              </object>
+              <label>High Couple</label>
+            </object>
+            <object class="notebookpage">
+              <object class="wxPanel" name="tabMedian">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="loadRawFilesMM">
+                          <label>Load raw data files:</label>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbFilesMM">
+                          <size>-1,504</size>
+                        </object>
+                        <flag>wxTOP|wxEXPAND</flag>
+                        <border>15</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelMM">
+                              <label>HSMM Model</label>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotMM">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsMM">
+                              <label>Show Results</label>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimMM">
+                              <label>Run Simulations</label>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="runClusteringMM">
+                          <label>Run clustering:</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <option>0</option>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster1MM">
+                          <label>Cluster 1</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1MM">
+                          <size>-1,205</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1MM">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotCluster1MM">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1MM">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1MM">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxBOTTOM</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster2MM">
+                          <label>Cluster 2</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster2MM">
+                          <size>-1,210</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster2MM">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotCluster2MM">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster2MM">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster2MM">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                </object>
+              </object>
+              <label>Median Couple</label>
+            </object>
+            <object class="notebookpage">
+              <object class="wxPanel" name="tabLow">
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="loadRawFilesLL">
+                          <label>Load raw data files:</label>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbFilesLL">
+                          <size>-1,504</size>
+                        </object>
+                        <flag>wxTOP|wxEXPAND</flag>
+                        <border>15</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelLL">
+                              <label>HSMM Model</label>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotLL">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsLL">
+                              <label>Show Results</label>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimLL">
+                              <label>Run Simulations</label>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxALL</flag>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                  <object class="sizeritem">
+                    <object class="wxBoxSizer">
+                      <object class="sizeritem">
+                        <object class="wxButton" name="runClusteringLL">
+                          <label>Run clustering:</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <option>0</option>
+                        <flag>wxALL</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster1LL">
+                          <label>Cluster 1</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster1LL">
+                          <size>-1,205</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster1LL">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotCluster1LL">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster1LL">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster1LL">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                        <flag>wxBOTTOM</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxStaticText" name="cluster2LL">
+                          <label>Cluster 2</label>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxTOP|wxBOTTOM|wxALL</flag>
+                        <border>10</border>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxCheckListBox" name="clbCluster2LL">
+                          <size>-1,210</size>
+                          <enabled>0</enabled>
+                        </object>
+                        <flag>wxEXPAND</flag>
+                      </object>
+                      <object class="sizeritem">
+                        <object class="wxBoxSizer">
+                          <object class="sizeritem">
+                            <object class="wxButton" name="hsmmModelCluster2LL">
+                              <label>HSMM Model</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="plotCluster2LL">
+                              <label>Plot</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>0</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="showResultsCluster2LL">
+                              <label>Show Results</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <object class="wxButton" name="runSimCluster2LL">
+                              <label>Run Simulations</label>
+                              <enabled>0</enabled>
+                            </object>
+                            <option>2</option>
+                          </object>
+                          <orient>wxHORIZONTAL</orient>
+                        </object>
+                      </object>
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                    <flag>wxALL</flag>
+                    <border>20</border>
+                  </object>
+                </object>
+              </object>
+              <label>Low Couple</label>
+            </object>
+          </object>
+          <option>1</option>
+          <flag>wxALL|wxEXPAND</flag>
+        </object>
+      </object>
+    </object>
+    <size>1124,650</size>
+    <title>HSMM SimDyad</title>
+  </object>
+  <object class="wxDialog" name="HSMMResultDlg">
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxToolBar" name="toolbar">
+          <object class="tool" name="toolSave">
+            <bitmap stock_id="wxART_FILE_SAVE"/>
+          </object>
+          <bitmapsize>16,16</bitmapsize>
+        </object>
+      </object>
+      <object class="sizeritem">
+        <object class="wxPanel">
+          <object class="wxBoxSizer">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+              <object class="wxTextCtrl" name="txtResult">
+                <size>650,550</size>
+                <value>1 2 3 4</value>
+                <font>
+                  <size>10</size>
+                  <style>normal</style>
+                  <weight>normal</weight>
+                  <underlined>0</underlined>
+                  <family>default</family>
+                  <face>Monaco</face>
+                  <encoding>default</encoding>
+                </font>
+                <style>wxTE_AUTO_SCROLL|wxTE_MULTILINE|wxHSCROLL</style>
+              </object>
+              <flag>wxALL</flag>
+              <border>5</border>
+            </object>
+          </object>
+          <size>600,600</size>
+        </object>
+      </object>
+    </object>
+    <size>650,600</size>
+    <title>Results</title>
+  </object>
+</resource>
